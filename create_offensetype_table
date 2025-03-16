@@ -1,0 +1,10 @@
+CREATE TABLE offense_types (
+    offense_id SERIAL PRIMARY KEY,
+    ucr_desc VARCHAR(255) UNIQUE NOT NULL,
+    statute VARCHAR(50),
+    stat_desc VARCHAR(255)
+);
+
+SELECT column_name, data_type 
+FROM information_schema.columns 
+WHERE table_name = 'offense_types';

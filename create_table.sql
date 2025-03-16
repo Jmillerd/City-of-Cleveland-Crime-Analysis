@@ -33,3 +33,8 @@ CREATE TABLE crime_data (
     x DECIMAL(12,6),
     y DECIMAL(12,6)
 );
+
+
+SELECT column_name, data_type 
+FROM information_schema.columns 
+WHERE table_name = 'crime_data';
