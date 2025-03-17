@@ -52,3 +52,8 @@ UPDATE crime_data
 SET city = 'columbus'
 WHERE LOWER(city) IN ('columus');
 
+
+UPDATE crime_data
+SET zip = '44118'
+WHERE zip = '44118CLEVE';   
+
